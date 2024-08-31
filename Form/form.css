@@ -5,3 +5,8 @@ body{
     background-color: #1b1b32;
     color: #f5f6f7;
 }
+
+/* label elements are inline by default*/
+label{
+    display: block;
+}
