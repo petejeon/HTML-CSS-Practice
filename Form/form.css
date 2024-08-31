@@ -14,3 +14,13 @@ label{
     margin:0.50rem 0;
 }
 
+fieldset{
+    border:none;
+    padding: 2rem 0;
+    border-bottom: 3px solid rgb(59,59,79);
+}
+
+/*takes the last element (fieldset in this case) and only apply the style to that*/
+fieldset:last-of-type{
+    border-bottom:none;
+}
