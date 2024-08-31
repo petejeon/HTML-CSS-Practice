@@ -38,3 +38,8 @@ fieldset:last-of-type{
 .inline{
     width:unset;
 }
+
+input[type="submit"]{
+    display:block;
+    width:60%;
+  }
