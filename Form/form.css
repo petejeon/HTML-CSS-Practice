@@ -4,9 +4,13 @@ body{
     margin: 0;
     background-color: #1b1b32;
     color: #f5f6f7;
+    font-family:tahoma;
+    font-size:16px;
 }
 
 /* label elements are inline by default*/
 label{
     display: block;
+    margin:0.50rem 0;
 }
+
