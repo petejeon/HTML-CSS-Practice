@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Registration Form</title>
-        <link rel="stylesheet" href="form.css">
-    </head>
+  <body>
+        <div class="form-title">
+            <h1>Feedback Form</h1>
+            <p>Please fill out this form with the required information</p>
+        </div>
 
-    <body>
-        
-    </body>
+    <form>
+        <fieldset>
+            <label for="full-name">Full Name <input id="full-name" type="text" required=""></label>
+            <label for="email">Email <input id="email" type="email" required=""></label>
+            <label for="age">Age <input id="age" type="number" required=""></label>
+            <label for="password">Password <input id="password" type="password" required="" pattern="[a-z0-9]{8,}"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Would you recommend XYZ?</legend> 
+            <label for="definitely"><input type="radio" name="recommend" id="definitely"> Definitely</label>
+            <label for="maybe"><input type="radio" name="recommend" id="maybe"> Maybe</label>
+            <label for="not-sure"><input type="radio" name="recommend" id="not-sure"> Not sure</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What would you like to see improved?</legend>
+            <label for="home-page"><input type="checkbox" name="improvment" id="home-page">Home page</label>
+            <label for="settings"><input type="checkbox" name="improvment" id="settings">Settings</label>
+            <label for="permissions"><input type="checkbox" name="improvment" id="permissions">Permissions</label>
+            <label for="profile-page"><input type="checkbox" name="improvment" id="profile-page">Profile page</label>
+            <label for="news-feed"><input type="checkbox" name="improvment" id="news-feed">News feed</label>
+            <label for="notifications"><input type="checkbox" name="improvment" id="notifications">Notifications</label>
+        </fieldset>
+
+        <input type="submit" value="Submit" />
+    </form>
+
+  </body>
+
 </html>
