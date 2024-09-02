@@ -17,11 +17,11 @@
 
     <form>
         <fieldset>
-            <label for="full-name">Full Name<input id="full-name" name="full-name" type="text" required=""></label>
-            <label for="email">Email<input id="email" name="email" type="email" required=""></label>
-            <label for="age">Age<input id="age" name="age" type="number" required=""></label>
-            <label for="password">Password<input id="password" name="password" type="password" required="" pattern="[a-z0-9]{8,}"></label>
-            <label for="referrer">How did you hear about us?
+            <label for="full-name" class="label-size">Full Name<input id="full-name" name="full-name" type="text" required=""></label>
+            <label for="email" class="label-size">Email<input id="email" name="email" type="email" required=""></label>
+            <label for="age" class="label-size">Age<input id="age" name="age" type="number" required=""></label>
+            <label for="password" class="label-size">Password<input id="password" name="password" type="password" required="" pattern="[a-z0-9]{8,}"></label>
+            <label for="referrer" class="label-size">How did you hear about us?
                 <select for="referrer" name="referrer" id="referrer">
                     <option value="">(Please select)</option>
                     <option value="1">From a friend</option>
@@ -51,7 +51,8 @@
         </fieldset>
 
         <fieldset>
-            <label for="other-feedback">Other feedback<textarea id="other-feedback" name="other-feedback" rows="10" cols="30" placeholder="other notes"></textarea></label>
+            <legend>Other feedback</legend>
+            <label for="other-feedback"><textarea id="other-feedback" name="other-feedback" rows="20" cols="30" placeholder="Other notes"></textarea></label>
         </fieldset>
 
         <input type="submit" value="Submit" />

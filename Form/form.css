@@ -8,7 +8,7 @@ body {
     margin: 0;
     background-color: #4E4C8A;
     color: #131314;
-    font-family: Tahoma;
+    font-family: inter;
     font-size: 16px;
 }
 
@@ -44,10 +44,12 @@ form{
 fieldset{
     padding: 0;
     border-radius: 6px;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
     border:none;
 }
-
+.label-size{
+    font-size: 18px;
+}
 label {
     display: block;
     margin: 16px 0;
@@ -57,25 +59,33 @@ label {
 
 legend{
     font-size: 18px;
-}
-
-textarea{
-    font-family: inter;
-    padding:10px;
+    font-weight: 500;
 }
 
 input, textarea, select {
     margin: 10px 0 0 0;
     display: block;
     width: 100%;
-    padding:0;
+    padding:16px;
     border: 1px solid #BDBDBD;
     border-radius: 4px;
     height: 50px;
+    box-sizing: border-box;
+}
+
+textarea{
+    font-family: inter;
+    font-size:16px;
+    height: 200px;
+}
+
+textarea::placeholder {
+    font-size: 16px;
 }
 
 input, textarea {
-    color: #ffffff;
+    color: #131314;
+    font-size: 16px;
 }
 
 .inline {
@@ -88,14 +98,17 @@ input, textarea {
   input[type="submit"] {
     display: block;
     width: 100%;
-    margin: 12px auto;
+    margin: 0px auto;
     height: 50px;
-    font-size: 1.1rem;
     background-color: #36854C;
+    font-size: 16px;
+    color:#ffffff;
     border-color: white;
     min-width: 300px;
     cursor: pointer;
     box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
 }
 
 input[type="submit"]:hover{
@@ -108,15 +121,15 @@ input[type="text"],[type="email"], [type="number"], [type="password"]{
 }
 
 input[type="radio"]{
-    height:20px;
-    width: 20px;
+    height:24px;
+    width: 24px;
     margin-right: 12px;
     cursor:pointer;
 }
 
 input[type="checkbox"]{
-    height:20px;
-    width:20px;
+    height:24px;
+    width:24px;
     margin-right: 12px;
     cursor:pointer;
     position: relative;
