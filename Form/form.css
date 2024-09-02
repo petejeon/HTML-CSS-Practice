@@ -47,9 +47,11 @@ fieldset{
     margin-bottom: 12px;
     border:none;
 }
+
 .label-size{
     font-size: 18px;
 }
+
 label {
     display: block;
     margin: 16px 0;
@@ -66,7 +68,7 @@ input, textarea, select {
     margin: 10px 0 0 0;
     display: block;
     width: 100%;
-    padding:16px;
+    padding:8px;
     border: 1px solid #BDBDBD;
     border-radius: 4px;
     height: 50px;
@@ -95,7 +97,7 @@ input, textarea {
     vertical-align: middle;
 }
 
-  input[type="submit"] {
+input[type="submit"] {
     display: block;
     width: 100%;
     margin: 0px auto;
@@ -121,17 +123,21 @@ input[type="text"],[type="email"], [type="number"], [type="password"]{
 }
 
 input[type="radio"]{
-    height:24px;
-    width: 24px;
-    margin-right: 12px;
-    cursor:pointer;
+    padding: unset;
+    border: 2px solid #A1A1A1;
+    width: 24px; /* Adjust width */
+    height: 24px; /* Adjust height */
+    border-radius: 50%; /* Make it a circle */
+    position: relative;
+    cursor: pointer;
 }
 
 input[type="checkbox"]{
+    padding: unset;
     height:24px;
     width:24px;
     margin-right: 12px;
     cursor:pointer;
     position: relative;
-    border: 2px solid #007BFF;
+    border: 2px solid #A1A1A1;
 }
