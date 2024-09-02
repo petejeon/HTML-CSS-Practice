@@ -148,3 +148,13 @@ label:last-of-type{
 fieldset:last-of-type{
     margin-bottom: 24px;
 }
+
+.other-feedback-font{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.required-asterisk {
+    color: #AA1919;
+    font-weight: bold; /* Optional, to make it stand out more */
+  }

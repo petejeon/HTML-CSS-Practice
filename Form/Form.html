@@ -17,11 +17,11 @@
 
     <form>
         <fieldset>
-            <label for="full-name" class="label-size">Full Name<input id="full-name" name="full-name" type="text" required=""></label>
-            <label for="email" class="label-size">Email<input id="email" name="email" type="email" required=""></label>
-            <label for="age" class="label-size">Age<input id="age" name="age" type="number" required=""></label>
-            <label for="password" class="label-size">Password<input id="password" name="password" type="password" required="" pattern="[a-z0-9]{8,}"></label>
-            <label for="referrer" class="label-size">How did you hear about us?
+            <label for="full-name" class="label-size">Full Name<span class="required-asterisk">*</span><input id="full-name" name="full-name" type="text" required=""></label>
+            <label for="email" class="label-size">Email<span class="required-asterisk">*</span><input id="email" name="email" type="email" required=""></label>
+            <label for="age" class="label-size">Age<span class="required-asterisk">*</span><input id="age" name="age" type="number" required=""></label>
+            <label for="password" class="label-size">Password<span class="required-asterisk">*</span><input id="password" name="password" type="password" required="" pattern="[a-z0-9]{8,}"></label>
+            <label for="referrer" class="label-size">How did you hear about us?<span class="required-asterisk">*</span>
                 <select for="referrer" name="referrer" id="referrer">
                     <option value="">(Please select)</option>
                     <option value="1">From a friend</option>
@@ -34,7 +34,7 @@
         </fieldset>
 
         <fieldset>
-            <legend>Would you recommend XYZ?</legend> 
+            <legend>Would you recommend XYZ?<span class="required-asterisk">*</span></legend> 
             <label for="definitely"><input type="radio" class="inline" id="definitely" name="recommend" >Definitely</label>
             <label for="maybe"><input type="radio" class="inline" id="maybe" name="recommend">Maybe</label>
             <label for="not-sure"><input type="radio" class="inline" id="not-sure" name="recommend">Not sure</label>
@@ -51,7 +51,7 @@
         </fieldset>
 
         <fieldset>
-            <label for="other-feedback" class="label-size">Other feedback<textarea id="other-feedback" name="other-feedback" rows="20" cols="30" placeholder="Other notes"></textarea></label>
+            <label for="other-feedback" class="other-feedback-font">Other feedback<textarea id="other-feedback" name="other-feedback" rows="20" cols="30" placeholder="Other notes"></textarea></label>
         </fieldset>
 
         <input type="submit" value="Submit" />
