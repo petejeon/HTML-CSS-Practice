@@ -43,7 +43,7 @@ form{
 fieldset{
     padding: 0;
     border-radius: 6px;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     border:none;
 }
 
@@ -60,11 +60,11 @@ label {
 
 legend{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 input, textarea, select {
-    margin: 10px 0 0 0;
+    margin: 8px 0 0 0;
     display: block;
     width: 100%;
     padding:8px;
@@ -92,7 +92,7 @@ input, textarea {
 .inline {
     width: unset;
     display: inline;
-    margin: 0 0.5em 0 0;
+    margin: -3px 0.5em 0 0;
     vertical-align: middle;
 }
 
