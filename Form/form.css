@@ -31,13 +31,19 @@ p{
   }
 
 form{
-    background-color: black;
+    max-width: 600px;
+    min-width: 300px;
+    width:50vw;
+    margin:0 auto;
+    padding-bottom: 24px;
+    background-color: #262845;
 }
 
 fieldset{
-    background-color: #262845;
     padding: 0;
     border-radius: 6px;
+    margin-bottom: 24px;
+    border:none;
   }
 
 label{
@@ -50,3 +56,39 @@ legend{
     font-size: 18px;
     margin-left:16px;
 }
+
+textarea{
+    font-family: inter;
+}
+
+input, textarea, select{
+    width:100%;
+    margin: 8px 0 0 0;
+    background-color: #0a0a23;
+    border:none;
+    height: 32px;
+    border-radius: 4px;
+    color: #f5f6f7;
+  }
+
+  .inline{
+    width:unset;
+    margin: -3px .5em 0 0;
+    vertical-align: middle;
+    width: 24px;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+  }
+
+  input[type="submit"]:hover{
+    background-color: rgb(15, 53, 53);
+  }

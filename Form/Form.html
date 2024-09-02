@@ -10,34 +10,48 @@
   </head>
 
   <body>
-        <div class="form-title">
-            <h1>Feedback Form</h1>
-            <p>Please fill out this form with the required information</p>
-        </div>
+    <div class="form-title">
+        <h1>Feedback Form</h1>
+        <p>Please fill out this form with the required information</p>
+    </div>
 
     <form>
         <fieldset>
-            <label for="full-name">Full Name <input id="full-name" type="text" required=""></label>
-            <label for="email">Email <input id="email" type="email" required=""></label>
-            <label for="age">Age <input id="age" type="number" required=""></label>
-            <label for="password">Password <input id="password" type="password" required="" pattern="[a-z0-9]{8,}"></label>
+            <label for="full-name">Full Name<input id="full-name" name="full-name" type="text" required=""></label>
+            <label for="email">Email<input id="email" name="email" type="email" required=""></label>
+            <label for="age">Age<input id="age" name="age" type="number" required=""></label>
+            <label for="password">Password<input id="password" name="password" type="password" required="" pattern="[a-z0-9]{8,}"></label>
+            <label for="referrer">How did you hear about us?
+                <select for="referrer" name="referrer" id="referrer">
+                    <option value="">(Please select)</option>
+                    <option value="1">From a friend</option>
+                    <option value="2">Google ad</option>
+                    <option value="3">Facebook ad</option>
+                    <option value="4">Can't remember</option>
+                    <option value="5">Other</option>
+                </select>
+        </label>
         </fieldset>
 
         <fieldset>
             <legend>Would you recommend XYZ?</legend> 
-            <label for="definitely"><input type="radio" name="recommend" id="definitely"> Definitely</label>
-            <label for="maybe"><input type="radio" name="recommend" id="maybe"> Maybe</label>
-            <label for="not-sure"><input type="radio" name="recommend" id="not-sure"> Not sure</label>
+            <label for="definitely"><input type="radio" class="inline" id="definitely" name="recommend" >Definitely</label>
+            <label for="maybe"><input type="radio" class="inline" id="maybe" name="recommend">Maybe</label>
+            <label for="not-sure"><input type="radio" class="inline" name="recommend" id="not-sure">Not sure</label>
         </fieldset>
 
         <fieldset>
             <legend>What would you like to see improved?</legend>
-            <label for="home-page"><input type="checkbox" name="improvment" id="home-page">Home page</label>
-            <label for="settings"><input type="checkbox" name="improvment" id="settings">Settings</label>
-            <label for="permissions"><input type="checkbox" name="improvment" id="permissions">Permissions</label>
-            <label for="profile-page"><input type="checkbox" name="improvment" id="profile-page">Profile page</label>
-            <label for="news-feed"><input type="checkbox" name="improvment" id="news-feed">News feed</label>
-            <label for="notifications"><input type="checkbox" name="improvment" id="notifications">Notifications</label>
+            <label for="home-page"><input type="checkbox" class="inline" name="improvment" id="home-page">Home page</label>
+            <label for="settings"><input type="checkbox" class="inline" name="improvment" id="settings">Settings</label>
+            <label for="permissions"><input type="checkbox" class="inline" name="improvment" id="permissions">Permissions</label>
+            <label for="profile-page"><input type="checkbox" class="inline" name="improvment" id="profile-page">Profile page</label>
+            <label for="news-feed"><input type="checkbox" class="inline" name="improvment" id="news-feed">News feed</label>
+            <label for="notifications"><input type="checkbox" class="inline" name="improvment" id="notifications">Notifications</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="other-feedback">Other feedback<textarea id="other-feedback" name="other-feedback" rows="3" cols="30" placeholder="other notes"></textarea></label>
         </fieldset>
 
         <input type="submit" value="Submit" />
